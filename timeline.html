@@ -58,6 +58,16 @@
         Your browser does not support the audio element.
     </audio>
     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('myAudio');
+        if (audio) {
+            audio.play().catch(function(error) {
+                console.log('Error attempting to play audio:', error);
+            });
+        }
+    });
+    </script>
+    <script>
     (function(){
         var canvas = $('#canvas');
 		
