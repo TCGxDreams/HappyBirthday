@@ -23,19 +23,18 @@
         </div>
 
         <!-- 3. Phần nhạc -->
-        <audio muted preload="auto" crossorigin="anonymous" autoplay loop>
+        <audio preload="auto" crossorigin="anonymous" autoplay loop>
         <source src="mp3/320kbps.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio>
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('myAudio');
-            if (audio) {
-                audio.play().catch(function(error) {
-                console.log('Error attempting to play audio:', error);
-                    });
-                }
+        // JavaScript code to ensure video autoplay
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('background-video');
+            video.play().catch(function (error) {
+                console.log('Autoplay was prevented: ' + error);
             });
-        </script>
+        });
+    </script>
     </body>
 </html>
