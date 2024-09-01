@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     /* Ảnh nền của trang thứ 2 nếu bạn muốn thay đổi thì nó tại đây */
-    background-image: url("../image/bbn.png");
+    background-image: url("../image/bbn_2.png");
     background-size: auto;
     background-repeat: no-repeat;
     font-size: 14px;
