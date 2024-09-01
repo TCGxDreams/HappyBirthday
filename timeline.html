@@ -2,6 +2,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/png" href="image/heart.png">
         <!-- Tiêu đề của trang dòng thời gian -->
 		<title>Thời gian đã trải qua</title>	    
@@ -17,7 +18,35 @@
 		<script type="text/javascript" src="js/function.js" charset="utf-8"></script>
 		<script type="text/javascript" src="js/love.js" charset="utf-8"></script>
 	    <style type="text/css"></style>
+        <style>
+            body {
+            font-size: 16px;
+            }
 
+            /* Đối với màn hình nhỏ hơn 768px */
+            @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+            }
+
+            /* Đối với màn hình nhỏ hơn 480px */
+            @media (max-width: 480px) {
+            body {
+                font-size: 12px;
+            }
+            }
+            .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+            .item {
+            flex: 1;
+            margin: 10px;
+            }
+    </style>
 </head>
     <body>
         <div class="buttons">
@@ -53,8 +82,8 @@
         </div>
 
     <!-- Phần nhạc -->
-    <audio autoplay autoloop>
-        <source src="mp3/钢琴Ⅰ弹琴TT 晴Clear Day 汪苏泷_320kbps.mp3" type="audio/mpeg">
+    <audio autoplay preload="auto" autoloop>
+        <source src="mp3/320kbps.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <script>

@@ -8,6 +8,36 @@
         <!-- 1. Tiêu đề của file index -->
         <title>Happy birthday</title>
         <link rel="stylesheet" href="css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                body {
+                font-size: 16px;
+                }
+
+                /* Đối với màn hình nhỏ hơn 768px */
+                @media (max-width: 768px) {
+                body {
+                    font-size: 14px;
+                }
+                }
+
+                /* Đối với màn hình nhỏ hơn 480px */
+                @media (max-width: 480px) {
+                body {
+                    font-size: 12px;
+                }
+                }
+                .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+
+                .item {
+                flex: 1;
+                margin: 10px;
+                }
+        </style>
     </head>
     <body class="page__main">
         <div class="buttons">
@@ -16,15 +46,15 @@
 
         <!-- 2. Phần ảnh của người bạn mún chúc -->
         <div class="video-background">
-            <video autoplay muted loop id="background-video">
+            <video autoplay muted auto loop id="background-video">
                 <source src="mp4/Video-2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
         <!-- 3. Phần nhạc -->
-        <audio id="player" autoplay loop>
-            <source src="" type="audio/mp3" />
+        <audio id="player" preload="auto" crossorigin="anonymous"  autoplay loop>
+            <source src="mp3/320kbps.mp3" type="audio/mp3" />
         </audio>
     </body>
 </html>
